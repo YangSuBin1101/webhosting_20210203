@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- .은 클래스 선택, 클래스는 여러개 가능 -->
+    <style>
+        .Hello
+        {
+            color: teal;
+        }
+        /* h1이면서 .Hello인 태그=and조건 ,는 or*/
+        h1.Hello
+        {
+            background-color: thistle;
+        }
+        p.Hello
+        {
+            background-color: wheat;
+        }
+        .Hello.bye
+        {
+            border: 1px solid black;
+        }
+        .bye
+        {
+            color: red;
+        }
+        .wow
+        {
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="Hello">Lorem ipsum.</h1>
+    <h1 class="bye">Lorem ipsum.</h1>
+    <h1 class="bye wow">Lorem ipsum.</h1>
+    <p class="Hello">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam consectetur eaque, enim rerum ipsa sequi cum voluptatem voluptates esse sint ad eligendi sed culpa necessitatibus voluptate cupiditate asperiores itaque.</p>
+    <p class="Hello bye">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio earum tempora, veritatis laborum rem ipsam, quis fuga error quas quae, quibusdam nobis consequatur exercitationem illum id recusandae maiores alias!</p>
+</body>
+</html>

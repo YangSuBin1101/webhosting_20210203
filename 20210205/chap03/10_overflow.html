@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=checkbox]:checked+div
+        {
+            height:300px;
+        }
+        div
+        {
+            overflow:hidden;
+            width:650px;
+            height:0px;
+            -ms-transition-duration:1s;
+            -webkit-transition-duration:1s;
+            -moz-transition-duration:1s;
+            transition-duration:1s;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div>
+        <h1>블라블라</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae atque nam repellat accusamus alias earum, consequatur dolore, assumenda incidunt dignissimos enim modi nobis sed eaque ut. Repudiandae alias molestiae reprehenderit.</p>
+    </div>
+</body>
+</html>
