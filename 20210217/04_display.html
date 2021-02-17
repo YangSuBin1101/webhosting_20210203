@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            background-color: aquamarine;
+        }
+        div{
+            background-color: red;
+        }
+        p{
+            background-color: rgb(182, 182, 253);
+        }
+        #box{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+        }
+
+        p:nth-of-type(2){
+            /* 두번째 p태그 */
+            /* display: none; 완전히 사라지게 함*/ 
+            visibility: hidden;
+            /* 내용은 안보이지만 공간은 남아 있음 */
+        }
+    </style>
+</head>
+<body>
+    <span>김두희</span>
+    <div id="box">
+        <span>Lorem ipsum dolor</span>
+    </div>
+    <div id="box2">
+        <span>Lorem ipsum dolor. Lorem ipsum dolor</span>
+    </div>
+    <p>Lorem ipsum dolor.</p>
+    <p>Lorem ipsum dolor.Lorem ipsum dolor.</p>
+    <p>Lorem ipsum dolor.Lorem ipsum dolor.Lorem ipsum dolor.</p>
+</body>
+</html>

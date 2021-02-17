@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            /* 녹색 사각형 */
+            background-color: olivedrab;
+            border: 20px solid pink;
+            /* 테두리, 녹색사각형과 분홍색 사각형 사이의 차이나는 높이 */
+
+            margin: 20px;
+            /* 분홍색 박스 2개의 테두리 사이의 높이 */
+            padding: 20px;
+            /* 올리브 사각형 안의 내용이 들어갈 영역과 올리브 사각형 사이의 차이나는 높이 */
+        }
+        div:first-child{
+            box-sizing: content-box;
+            /* 기본값, 알맹이에만 적용됨(w, h) */
+        }
+        div:last-child{
+            box-sizing: border-box;
+            /* 기본값, w,h값 입력시 border까지의 크기를 의미함 */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

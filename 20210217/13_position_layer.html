@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            
+        }
+        .red{
+            background-color: tomato;
+            left:10px;
+            top: 10px;
+
+        }
+        .green{
+            background-color: greenyellow;
+            left: 50px;
+            top: 50px;
+
+        }
+        .blue{
+            background-color: aqua;
+            left: 90px;
+            top: 90px;
+        }
+        body>div{
+        /* 어느 부모 태그 밑의 자손태그의 position이 absolute로 되어있으면 
+        부모태그에 height값을 줘서 영역을 나타내주면 됨. */
+            width: 400px;
+            height: 100px;
+            border: 3px solid black;
+            position : relative;
+            /* 기본값 static이 아니라 relative를 주면 body가 아닌 
+            div를 부모로 인식해 기준점이 달라짐.
+            (=자식이 absolute면 부모는 static이 아니어야지 
+              바로 위 부모의 좌상단을 기준점으로 잡음) */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    </div>
+    <h1>Lorem ipsum dolor sit.</h1>
+</body>
+</html>

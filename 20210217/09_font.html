@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{font-size: 32px;}
+        .b{font-size: 2em;}
+        .c{font-size: large;}
+        .d{font-size: small;}
+
+        .font_arial{font-family: 'Times New Roman';}
+        .font_arial{font-family: Arial, Helvetica, sans-serif;}
+        /* 폰트 이름에 공백이 있으면 '', 없거나 -있으면 ''필요없음 */
+        /* 존재하지 않는 폰트면 그 다음 설정된 폰트로 전환됨. 모두 없으면 기본 폰트 */
+        .font_bold{font-weight: bold;}
+        /* 굵은 글자 */
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor.</h1>
+    <!-- 기본적으로 h1은 p보다 2배 크고 2배 두꺼움 -->
+    <p class="a font_arial">Lorem ipsum dolor.</p>
+    <!-- id는 태그 안에 1개만 올 수 있고, html안에서 유일해야함 -->
+    <!-- class는 태그 안에 여러 개 올 수 있고, html안에서 중복 가능 -->
+    <p class="b">Lorem ipsum dolor.</p>
+    <p class="c">Lorem ipsum dolor.</p>
+    <p class="d">Lorem ipsum dolor.</p>
+</body>
+</html>
