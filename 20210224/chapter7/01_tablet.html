@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{font-family: 'Helvetica', sans-serif;}
+        li{list-style: none;}
+        a{text-decoration: none;}
+        
+        /* 수직정렬 */
+        .header{
+            height: 60px;
+            line-height: 60px;
+            background-color: aquamarine;
+            padding-left: 20px;
+            border-bottom: 1px solid black;
+        }
+
+        /* 수평정렬 */
+        .wrap{
+            overflow: hidden;
+        }
+
+        /* 수평정렬 */
+        .aside{
+            float: left;
+            width: 200px;
+        }
+
+        /* 수평정렬 */
+        .section{
+            float: left;
+            width: 100%;
+            margin-right: -200px;
+            /* 이 부분이 헷갈림 */
+        }
+
+        .inner-section{
+            padding-left: 20px;
+            padding-right: 200px; 
+            /* 안쪽에 200px을 줘서 안짤리게 */
+        }
+
+        body{
+            min-width: 600px; 
+            /* 어디까지 줄어드나 */
+        }
+
+        .header{
+            position: fixed;
+            left: 0;
+            right: 0;
+        }
+
+        .wrap{
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>안녕</h1>
+    </div>
+    <div class="wrap">
+        <div class="aside">
+            <p>Lorem ipsum dolor sit, amet consectetur</p>
+            <p>Lorem ipsum dolor sit, amet consectetur</p>
+        </div>
+        <div class="section">
+            <div class="inner-section">
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maxime laboriosam quasi nesciunt eum deserunt dolore temporibus laborum inventore fugiat, pariatur fuga ex illum voluptatem cum exercitationem sequi nihil voluptatum iure neque deleniti consequuntur, asperiores eius voluptates. Praesentium a doloremque veniam accusantium eligendi voluptas omnis, maxime vel itaque est illum, aut quis nulla. Incidunt cum tempora eligendi tenetur, veniam rem quam corporis, vel voluptatem doloribus culpa nesciunt explicabo, atque est reprehenderit. Ea provident, animi libero quaerat necessitatibus sequi illum illo dignissimos recusandae aliquam voluptates quae aut ducimus, dolores debitis sed vero eaque. Consectetur deserunt qui magnam esse expedita vero quod.</p>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maxime laboriosam quasi nesciunt eum deserunt dolore temporibus laborum inventore fugiat, pariatur fuga ex illum voluptatem cum exercitationem sequi nihil voluptatum iure neque deleniti consequuntur, asperiores eius voluptates. Praesentium a doloremque veniam accusantium eligendi voluptas omnis, maxime vel itaque est illum, aut quis nulla. Incidunt cum tempora eligendi tenetur, veniam rem quam corporis, vel voluptatem doloribus culpa nesciunt explicabo, atque est reprehenderit. Ea provident, animi libero quaerat necessitatibus sequi illum illo dignissimos recusandae aliquam voluptates quae aut ducimus, dolores debitis sed vero eaque. Consectetur deserunt qui magnam esse expedita vero quod.</p>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maxime laboriosam quasi nesciunt eum deserunt dolore temporibus laborum inventore fugiat, pariatur fuga ex illum voluptatem cum exercitationem sequi nihil voluptatum iure neque deleniti consequuntur, asperiores eius voluptates. Praesentium a doloremque veniam accusantium eligendi voluptas omnis, maxime vel itaque est illum, aut quis nulla. Incidunt cum tempora eligendi tenetur, veniam rem quam corporis, vel voluptatem doloribus culpa nesciunt explicabo, atque est reprehenderit. Ea provident, animi libero quaerat necessitatibus sequi illum illo dignissimos recusandae aliquam voluptates quae aut ducimus, dolores debitis sed vero eaque. Consectetur deserunt qui magnam esse expedita vero quod.</p>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maxime laboriosam quasi nesciunt eum deserunt dolore temporibus laborum inventore fugiat, pariatur fuga ex illum voluptatem cum exercitationem sequi nihil voluptatum iure neque deleniti consequuntur, asperiores eius voluptates. Praesentium a doloremque veniam accusantium eligendi voluptas omnis, maxime vel itaque est illum, aut quis nulla. Incidunt cum tempora eligendi tenetur, veniam rem quam corporis, vel voluptatem doloribus culpa nesciunt explicabo, atque est reprehenderit. Ea provident, animi libero quaerat necessitatibus sequi illum illo dignissimos recusandae aliquam voluptates quae aut ducimus, dolores debitis sed vero eaque. Consectetur deserunt qui magnam esse expedita vero quod.</p>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maxime laboriosam quasi nesciunt eum deserunt dolore temporibus laborum inventore fugiat, pariatur fuga ex illum voluptatem cum exercitationem sequi nihil voluptatum iure neque deleniti consequuntur, asperiores eius voluptates. Praesentium a doloremque veniam accusantium eligendi voluptas omnis, maxime vel itaque est illum, aut quis nulla. Incidunt cum tempora eligendi tenetur, veniam rem quam corporis, vel voluptatem doloribus culpa nesciunt explicabo, atque est reprehenderit. Ea provident, animi libero quaerat necessitatibus sequi illum illo dignissimos recusandae aliquam voluptates quae aut ducimus, dolores debitis sed vero eaque. Consectetur deserunt qui magnam esse expedita vero quod.</p>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maxime laboriosam quasi nesciunt eum deserunt dolore temporibus laborum inventore fugiat, pariatur fuga ex illum voluptatem cum exercitationem sequi nihil voluptatum iure neque deleniti consequuntur, asperiores eius voluptates. Praesentium a doloremque veniam accusantium eligendi voluptas omnis, maxime vel itaque est illum, aut quis nulla. Incidunt cum tempora eligendi tenetur, veniam rem quam corporis, vel voluptatem doloribus culpa nesciunt explicabo, atque est reprehenderit. Ea provident, animi libero quaerat necessitatibus sequi illum illo dignissimos recusandae aliquam voluptates quae aut ducimus, dolores debitis sed vero eaque. Consectetur deserunt qui magnam esse expedita vero quod.</p>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maxime laboriosam quasi nesciunt eum deserunt dolore temporibus laborum inventore fugiat, pariatur fuga ex illum voluptatem cum exercitationem sequi nihil voluptatum iure neque deleniti consequuntur, asperiores eius voluptates. Praesentium a doloremque veniam accusantium eligendi voluptas omnis, maxime vel itaque est illum, aut quis nulla. Incidunt cum tempora eligendi tenetur, veniam rem quam corporis, vel voluptatem doloribus culpa nesciunt explicabo, atque est reprehenderit. Ea provident, animi libero quaerat necessitatibus sequi illum illo dignissimos recusandae aliquam voluptates quae aut ducimus, dolores debitis sed vero eaque. Consectetur deserunt qui magnam esse expedita vero quod.</p>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maxime laboriosam quasi nesciunt eum deserunt dolore temporibus laborum inventore fugiat, pariatur fuga ex illum voluptatem cum exercitationem sequi nihil voluptatum iure neque deleniti consequuntur, asperiores eius voluptates. Praesentium a doloremque veniam accusantium eligendi voluptas omnis, maxime vel itaque est illum, aut quis nulla. Incidunt cum tempora eligendi tenetur, veniam rem quam corporis, vel voluptatem doloribus culpa nesciunt explicabo, atque est reprehenderit. Ea provident, animi libero quaerat necessitatibus sequi illum illo dignissimos recusandae aliquam voluptates quae aut ducimus, dolores debitis sed vero eaque. Consectetur deserunt qui magnam esse expedita vero quod.</p>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maxime laboriosam quasi nesciunt eum deserunt dolore temporibus laborum inventore fugiat, pariatur fuga ex illum voluptatem cum exercitationem sequi nihil voluptatum iure neque deleniti consequuntur, asperiores eius voluptates. Praesentium a doloremque veniam accusantium eligendi voluptas omnis, maxime vel itaque est illum, aut quis nulla. Incidunt cum tempora eligendi tenetur, veniam rem quam corporis, vel voluptatem doloribus culpa nesciunt explicabo, atque est reprehenderit. Ea provident, animi libero quaerat necessitatibus sequi illum illo dignissimos recusandae aliquam voluptates quae aut ducimus, dolores debitis sed vero eaque. Consectetur deserunt qui magnam esse expedita vero quod.</p>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maxime laboriosam quasi nesciunt eum deserunt dolore temporibus laborum inventore fugiat, pariatur fuga ex illum voluptatem cum exercitationem sequi nihil voluptatum iure neque deleniti consequuntur, asperiores eius voluptates. Praesentium a doloremque veniam accusantium eligendi voluptas omnis, maxime vel itaque est illum, aut quis nulla. Incidunt cum tempora eligendi tenetur, veniam rem quam corporis, vel voluptatem doloribus culpa nesciunt explicabo, atque est reprehenderit. Ea provident, animi libero quaerat necessitatibus sequi illum illo dignissimos recusandae aliquam voluptates quae aut ducimus, dolores debitis sed vero eaque. Consectetur deserunt qui magnam esse expedita vero quod.</p>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maxime laboriosam quasi nesciunt eum deserunt dolore temporibus laborum inventore fugiat, pariatur fuga ex illum voluptatem cum exercitationem sequi nihil voluptatum iure neque deleniti consequuntur, asperiores eius voluptates. Praesentium a doloremque veniam accusantium eligendi voluptas omnis, maxime vel itaque est illum, aut quis nulla. Incidunt cum tempora eligendi tenetur, veniam rem quam corporis, vel voluptatem doloribus culpa nesciunt explicabo, atque est reprehenderit. Ea provident, animi libero quaerat necessitatibus sequi illum illo dignissimos recusandae aliquam voluptates quae aut ducimus, dolores debitis sed vero eaque. Consectetur deserunt qui magnam esse expedita vero quod.</p>
+                <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos maxime laboriosam quasi nesciunt eum deserunt dolore temporibus laborum inventore fugiat, pariatur fuga ex illum voluptatem cum exercitationem sequi nihil voluptatum iure neque deleniti consequuntur, asperiores eius voluptates. Praesentium a doloremque veniam accusantium eligendi voluptas omnis, maxime vel itaque est illum, aut quis nulla. Incidunt cum tempora eligendi tenetur, veniam rem quam corporis, vel voluptatem doloribus culpa nesciunt explicabo, atque est reprehenderit. Ea provident, animi libero quaerat necessitatibus sequi illum illo dignissimos recusandae aliquam voluptates quae aut ducimus, dolores debitis sed vero eaque. Consectetur deserunt qui magnam esse expedita vero quod.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

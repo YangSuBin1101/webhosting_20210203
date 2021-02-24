@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 초기화하는 코드 웹페이지마다 제공하는 기본값이 다르기 때문*/
+        *{margin: 0; padding: 0;}
+        body{font-family: 'Helvetica', sans-serif;}
+        li{list-style: nene;}
+        a{text-decoration: none;}
+
+        /* 헤더 부분 스타일 */
+        #main_header{
+            height: 45px;
+            background: url('header_background.png');
+
+            /* 자손 위치 지정 */
+            position: relative;
+            text-align: center;
+            /* 수평중앙 */
+            line-height: 45px;
+            /* 수직중앙 */
+        }
+
+        #main_header>h1{
+            color: wheat;
+        }
+
+        #main_header>a, #main_header>label{
+            display: block;
+            height: 32px;
+            position: absolute;
+        }
+
+        #main_header>a.left{
+            width: 62px;
+            left: 5px; top: 7px;
+        }
+
+        #main_header>label.right{
+            width: 32px;
+            right: 5px;
+            top: 7px;
+        }
+
+        /* 스프라이트 이미지 적용 */
+        #main_header>a.left{
+            background: url('css_sprites\ \(2\).png');
+            background-position: 0px 0px;
+            text-indent: -99999px;
+        }
+
+        #main_header>label.right{
+            width: 32px;
+            height: 32px;
+            background: url('css_sprites\ \(2\).png') -65px -1px;
+            text-indent: -99999px;
+        }
+
+        /* 체크박스 감추기 */
+        #toggle{display: none;}
+        #toggle+#wrap>#toggle_gnb_wrap{display: none;}
+        #toggle:checked+#wrap>#toggle_gnb_wrap{display: block;}
+
+        /* 레이아웃 색상 */
+        #toggle_gnb_wrap{
+            background: darkcyan;
+            padding: 15px;
+        }
+
+        #toggle_gnb{
+            background: whitesmoke;
+            padding: 5px;
+        }
+
+        /* 토글 목록, 수평정렬 */
+        #toggle_gnb>ul{overflow: hidden;}
+        #toggle_gnb>ul>li{
+            width: 80px; float: left;
+        }
+
+        /* 네비게이션 */
+        #top_gnb{
+            overflow: hidden;
+            border-bottom: 1px solid black;
+            background: salmon;
+        }
+        #top_gnb>div>a{
+            float: left; width: 25%;
+
+            /* 크기 색상 정렬 */
+            height: 35px;
+            line-height:  35px;
+            text-align: center;
+            color: white;
+        }
+
+        #bottom_gnb{
+            display: table;
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+        #bottom_gnb>div{
+            display: table-cell;
+            position: relative;
+        }
+
+        #bottom_gnb>div>a{
+            display: block;
+            height: 35px;
+            line-height: 35px;
+            text-align:center;
+        }
+
+        #bottom_gnb>div>a ::before{
+            display: block;
+            position: absolute;
+            top: 9px; left: -1px;
+            width: 1px; height: 15px;
+            border-left: 1px solid black;
+            content: '';
+        }
+
+        #section_header{
+            padding: 20px;
+        }
+
+        #section_article{
+            padding: 10px;
+        }
+
+        #main_footer{
+            padding: 10px;
+            border-top: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <div id="wrap">
+        <header id="main_header">
+            <a class="left" href="#">aaa</a>
+            <h1>Mobile</h1>
+            <label class="right" for="toggle">Toggle</label>
+        </header>
+        <div id="toggle_gnb_wrap">
+            <div id="toggle_gnb">
+                <ul>
+                    <!-- (li>a[href=#])*8 -->
+                    <li><a href="#">버튼</a></li>
+                    <li><a href="#">버튼</a></li>
+                    <li><a href="#">버튼</a></li>
+                    <li><a href="#">버튼</a></li>
+                    <li><a href="#">버튼</a></li>
+                    <li><a href="#">버튼</a></li>
+                    <li><a href="#">버튼</a></li>
+                    <li><a href="#">버튼</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav id="top_gnb">
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+        </nav>
+        <nav id="bottom_gnb">
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+            <div><a href="#">버튼</a></div>
+        </nav>
+        <section id="main_section">
+            <header id="section_header">
+                <h1>Lorem ipsum dolor</h1>
+                <time>1900-01-01</time>
+            </header>
+            <article id="section_article">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis omnis fugiat velit illum explicabo eaque impedit dolor fuga, eos eveniet quas officiis nisi blanditiis sint deserunt dolores minus beatae sunt inventore! Dolores alias sapiente, corporis quis vero perferendis ut! Repudiandae, dignissimos quo harum a labore dolor consectetur possimus deserunt iste maxime voluptates similique veritatis sunt, modi aut odit? Nemo nostrum ab iste quod itaque. Ducimus aperiam consequuntur consequatur voluptate debitis, labore, dolorum laudantium reiciendis enim illo libero mollitia praesentium eveniet. Natus, consequuntur. Corporis tenetur, architecto a beatae provident reiciendis non rem culpa. Aperiam numquam sed, laudantium, autem nobis aliquid fuga repudiandae fugiat provident ullam quia necessitatibus beatae velit sequi porro molestias enim consequatur, adipisci neque maiores facilis labore inventore nesciunt nemo. Magnam fugiat temporibus consequuntur quisquam, esse excepturi veniam tenetur impedit sapiente non inventore, voluptas aspernatur autem perspiciatis earum ut ducimus dolore quos provident odit dolorum. Exercitationem ea suscipit unde cupiditate dicta aliquid fugiat fugit neque? Iusto totam ut inventore a recusandae rerum harum quibusdam laudantium, ducimus aperiam reprehenderit doloremque officia sed iure asperiores excepturi placeat cumque consequuntur! Esse cupiditate quasi magni quae unde voluptatibus dignissimos porro dolore nihil labore voluptatum voluptatem optio eligendi, suscipit minima dolorum delectus iste corrupti earum blanditiis ipsam et alias? Atque ratione assumenda deserunt voluptatum ea! Sequi dolores adipisci, hic esse alias velit doloribus optio? Ex temporibus fuga itaque unde autem tempore, saepe placeat! Aperiam nobis, aliquid perferendis quos dolorum modi maiores tempore dignissimos libero consequuntur deleniti quisquam temporibus? Distinctio saepe corrupti eaque aliquam iste quod maxime dolore doloribus sit exercitationem id ut similique quas eum a dolorem, perferendis assumenda consequuntur quibusdam tempora explicabo tenetur. Repellendus quo perferendis veritatis qui cupiditate? Nostrum delectus rem sapiente enim cupiditate aspernatur autem similique? Error exercitationem vitae vero tenetur est facere ad eveniet aperiam nobis? Recusandae officia fugit ea! Temporibus eveniet mollitia quaerat magnam nesciunt dicta aperiam quidem dolore doloremque, minima nisi iusto ipsa id rem cupiditate vero. Optio, assumenda, eligendi vitae iure provident laborum cupiditate tenetur nihil perspiciatis voluptatum ratione, repudiandae nobis consequuntur quibusdam. Nam beatae aliquam sunt exercitationem tenetur sed! Quia rem, eius magnam debitis consectetur culpa consequuntur eaque quidem sint unde saepe molestiae neque officia hic fugit nostrum, vel quo enim quasi doloremque reiciendis repudiandae? Amet quasi aut sit asperiores reprehenderit impedit laudantium ea, optio architecto itaque iure omnis totam facere quidem cumque quaerat doloribus rem provident mollitia ut quibusdam ullam suscipit recusandae rerum? Tenetur, culpa accusamus! Ipsa possimus laudantium corrupti quam error enim voluptatum at eveniet quos explicabo magnam repudiandae minima ea, aperiam itaque et voluptates id, deleniti, voluptate suscipit quo quibusdam repellendus inventore esse. Placeat quaerat adipisci quo. Vitae doloribus nulla odit sint itaque eaque perferendis sit alias illo ea accusantium soluta pariatur reiciendis quos numquam nisi ipsa quam possimus, temporibus distinctio id deleniti nemo quod. Incidunt, architecto voluptates quibusdam accusamus aut quaerat sequi iste nihil est adipisci deserunt unde cum minus, libero ratione id sit quis impedit iure, aliquid laboriosam? Eius culpa placeat nemo, quos pariatur saepe, vitae explicabo quidem perferendis laboriosam harum.</p>
+            </article>
+        </section>
+        <footer id="main_footer">
+            <h4>Lorem ipsum dolor</h4>
+            <address>Lorem ipsum dolor sit, amet consectetur</address>
+        </footer>
+    </div>
+</body>
+</html>
