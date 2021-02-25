@@ -1,0 +1,21 @@
+div {
+  height: 30px;
+}
+div:nth-child(1) {
+  background: #977076;
+}
+div:nth-child(2) {
+  background: #5d4448;
+}
+div:nth-child(3) {
+  background: #22191a;
+}
+div:nth-child(4) {
+  background: #000000;
+}
+div:nth-child(5) {
+  background: #000000;
+}
+div:nth-child(6) {
+  background: #000000;
+}

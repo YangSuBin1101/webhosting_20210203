@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 100px;
+            height: 100px;
+            border: 5px solid rgb(247, 107, 83);
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(0, 119, 255, 0.589);
+            
+            transform: rotate(60deg) scale(0.5) translateX(100px);
+            transform-origin: 100% 100%;
+            /* 빨간 상자 안에서 파란 상자 위치가 중간에서 오른쪽 하단으로 내려옴 */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+        </div>
+    </div>
+</body>
+</html>
